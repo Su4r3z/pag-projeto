@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="img/Design sem nome (19).png "image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/Smart.png" alt="" />
+      </div>
+    </header>
+    <!-- Esferas -->
+    <section>
+      <div class="container">
+        <h1>Bem Vindo De Volta</h1>
+        <div class="form">
+          <div class="horizontal">
+            <div class="esfera" onclick="mostrarInput('input1')">
+              <img src="img/do-utilizador.png" alt="" />
+            </div>
+
+            <div class="input-hidden" id="input1">
+              <input
+                type="text"
+                placeholder="Email"
+                oninput="naoOcultar('input1')"
+              />
+            </div>
+          </div>
+          <div class="horizontal">
+            <div class="esfera" onclick="mostrarInput('input2')">
+              <div class="imagem" onclick="trocarImagem(this)"></div>
+            </div>
+            <div class="input-hidden" id="input2">
+              <input
+                type="password"
+                placeholder="Senha"
+                oninput="naoOcultar('input2')"
+              />
+            </div>
+          </div>
+          <button>Entrar</button>
+          <a href="#">Esqueceu a Senha?</a>
+          <a href="#">Criar Conta</a>
+        </div>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
